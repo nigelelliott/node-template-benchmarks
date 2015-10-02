@@ -1,0 +1,23 @@
+{
+  "name": "node-template-performance",
+  "version": "1.0.0",
+  "description": "A performance comparison of various javascript template engines",
+  "main": "main/index.js",
+  "scripts": {
+    "start": "set NODE_ENV=production && node main/index.js",
+    "test": ""
+  },
+  "author": "Nigel Elliott",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "handlebars": "^4.0.3",
+    "hogan.js": "^3.0.2",
+    "mustache": "^2.1.3",
+    "node-jsx": "^0.13.3",
+    "react": "^0.13.3",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {}
+}
