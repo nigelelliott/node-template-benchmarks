@@ -11,7 +11,7 @@ var OuterComponent = React.createClass({
 
         for(var i = 0; i < 10; i++) {
 
-            innerComponents[i] = (<InnerComponent />);
+            innerComponents[i] = (<InnerComponent key={i} />);
 
         }
 
@@ -30,7 +30,7 @@ var InnerComponent = React.createClass({
 
         for(var i = 0; i < 100; i++) {
 
-            labelComponents[i] = (<LabelComponent title='World'/>);
+            labelComponents[i] = (<LabelComponent key={i} title='World'/>);
 
         }
 

@@ -67,35 +67,35 @@ module.exports = {
             avg: benchmarkFlat.formatAvgMS()
         };
 
-    },
-
-    renderDeep: function(iterations) {
-
-        var count = iterations || 1,
-            html  = '';
-
-        // warm V8 by allowing it to optimize function calls
-
-        html += OuterTemplate();
-
-
-        // begin benchmark
-
-        benchmarkDeep.start();
-
-        for(var i = 0; i < count; i++) {
-
-            html += OuterTemplate();
-
-        }
-
-        benchmarkDeep.stop();
-
-        return {
-            time: benchmarkDeep.formatMS(),
-            avg: benchmarkDeep.formatAvgMS()
-        };
-
     }
+
+    //,renderDeep: function(iterations) {
+    //
+    //    var count = iterations || 1,
+    //        html  = '';
+    //
+    //    // warm V8 by allowing it to optimize function calls
+    //
+    //    html += OuterTemplate();
+    //
+    //
+    //    // begin benchmark
+    //
+    //    benchmarkDeep.start();
+    //
+    //    for(var i = 0; i < count; i++) {
+    //
+    //        html += OuterTemplate();
+    //
+    //    }
+    //
+    //    benchmarkDeep.stop();
+    //
+    //    return {
+    //        time: benchmarkDeep.formatMS(),
+    //        avg: benchmarkDeep.formatAvgMS()
+    //    };
+    //
+    //}
 
 };

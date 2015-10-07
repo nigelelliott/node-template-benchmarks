@@ -13,7 +13,7 @@ class OuterComponent extends React.Component {
 
         for(var i = 0; i < 10; i++) {
 
-            innerComponents[i] = (<InnerComponent />);
+            innerComponents[i] = (<InnerComponent key={i} />);
 
         }
 
@@ -32,7 +32,7 @@ class InnerComponent extends React.Component {
 
         for(var i = 0; i < 100; i++) {
 
-            labelComponents[i] = (<LabelComponent title='World'/>);
+            labelComponents[i] = (<LabelComponent key={i} title='World'/>);
 
         }
 
