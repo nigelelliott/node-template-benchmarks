@@ -11,9 +11,9 @@ Note: the project requires io.js or Node.js (version 4.0 or greater) to run.
 
 ## Analysis
 
-This small project was put together in order to assess how using React on the server performs relative to the other template solutions.
+This small project was put together in order to assess how using React on the server performs relative to the other template solutions, and also show the speed improvements that can be made by using various React optimizations.
 
-The following table shows the render time of a single component (React) or template (others) using each of the different engines.  The average time is the result after 10 runs.  Unsurprisingly React is slower than the other basic template engines, but we are still able to see a significant performance increase by using the minified build, and another slight gain using the new JavaScript class syntax in ES6. Obviously React is much more than a template language so it isn’t a straight comparison but hopefully it’s useful to get an overview of different solutions.
+The following table shows the render time of a single component (React) or template (others) using each of the different engines.  The average time is the result after 10 runs.  Unsurprisingly React is slower than the other basic template engines, but we are still able to see a significant performance increase by using the minified build, and another slight gain using the new JavaScript class syntax in ES6.
 
 Note: the latest version of React (0.14) now introduces the concept of stateless components which render faster again - see comparison below
 
